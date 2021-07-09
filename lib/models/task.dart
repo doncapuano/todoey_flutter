@@ -1,6 +1,6 @@
-// @dart=2.9
+
 class Task {
-  final String name;
+  final String? name;
   bool isDone;
 
   Task({this.name, this.isDone = false});

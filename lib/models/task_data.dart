@@ -1,13 +1,13 @@
-// @dart=2.9
+
 import 'dart:collection';
 import 'package:flutter/foundation.dart';
 import 'package:todoey/models/task.dart';
 
 class TaskData extends ChangeNotifier {
   List<Task> _tasks = [
-    Task(name: 'Buy milk'),
-    Task(name: 'Buy eggs'),
-    Task(name: 'Buy bread'),
+    // Task(name: 'Buy milk'),
+    // Task(name: 'Buy eggs'),
+    // Task(name: 'Buy bread'),
   ];
 
   UnmodifiableListView<Task> get tasks {
@@ -18,7 +18,7 @@ class TaskData extends ChangeNotifier {
     return _tasks.length;
   }
 
-  void addTask(String newTaskTitle) {
+  void addTask(String? newTaskTitle) {
     final task = Task(name: newTaskTitle);
     _tasks.add(task);
     notifyListeners();
