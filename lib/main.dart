@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       create: (context) => TaskData(),
       child: MaterialApp(
         theme: ThemeData(
+          brightness: Brightness.light,
           primaryColor: Colors.green[900],
           accentColor: Colors.white
         ),
